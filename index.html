@@ -68,6 +68,18 @@ a{color:inherit;text-decoration:none}
 .warn{display:grid;grid-template-columns:28px 1fr;gap:10px;padding:11px 12px;border-radius:13px;background:var(--red2);border:1px solid #f1cfc7;margin-top:4px}
 .warn span{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:var(--red);color:#fff;font-weight:900}
 .warn b{color:var(--red);font-size:13px}.warn small{display:block;color:#7e655e;font-size:12px;line-height:1.6}
+.days{display:grid;gap:7px;margin-bottom:8px}
+.day{border:1px solid var(--line);border-radius:15px;background:#fff;overflow:hidden}
+.day summary{list-style:none;display:grid;grid-template-columns:64px 1fr 18px;gap:12px;align-items:center;padding:8px 12px 8px 8px;cursor:pointer}
+.day summary::-webkit-details-marker{display:none}
+.day summary img{width:64px;height:52px;object-fit:cover;border-radius:10px}
+.day summary em{display:block;font-style:normal;font-size:10px;font-weight:800;letter-spacing:.18em;color:#a0715a}
+.day summary b{font-size:14.5px}
+.day summary .ar{color:var(--soft);transition:transform .25s}.day[open] summary .ar{transform:rotate(90deg)}
+.din{padding:2px 14px 13px 84px}
+.din ul{list-style:none;display:grid;gap:4px}
+.din li{font-size:13.5px;padding-left:14px;position:relative}.din li:before{content:"";position:absolute;left:0;top:.65em;width:6px;height:6px;border-radius:50%;background:#d8b9a6}
+.din .tip{margin-top:8px;font-size:12.5px;color:#a0715a;background:#f8efe8;border-radius:10px;padding:7px 10px}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
 .mini{padding:11px;border-radius:13px;background:#fff;border:1px solid var(--line)}
 .mini i{font-style:normal;font-size:19px}.mini b{display:block;font-size:13px;margin-top:3px}.mini small{display:block;color:var(--soft);font-size:11.5px;line-height:1.55}
@@ -122,11 +134,22 @@ a{color:inherit;text-decoration:none}
     <details class="topic">
       <summary><span class="ic">🏡</span><span><b>新貓到家 7 天這樣做</b><small>用愛與耐心 陪牠建立安全感</small></span><span class="ar">›</span></summary>
       <div class="body">
-        <a class="fig" href="img/guide-newcat.jpg" target="_blank" rel="noopener"><img src="img/guide-newcat.jpg" alt="新貓到家 7 天這樣做：Day1 先適應新環境、Day2 建立飲食與喝水習慣、Day3 保持環境乾淨、Day4 建立信任感、Day5 增加日常互動、Day6 觀察整體狀態、Day7 安排健康檢查" loading="lazy"></a>
-        <span class="zoom">🔍 點圖片可以放大</span>
-        <div class="step"><i>1</i><div><b>前三天 先不要抱</b><small>給牠獨立空間 讓牠自己決定什麼時候靠近你</small></div></div>
-        <div class="step"><i>2</i><div><b>每天看吃喝拉撒</b><small>食慾、喝水、便便 是這週最重要的觀察</small></div></div>
-        <div class="step"><i>3</i><div><b>第 7 天安排健檢</b><small>理學檢查、血液檢測 先了解牠的身體狀況</small></div></div>
+        <div class="days">
+          <details class="day" open><summary><img src="img/day1.jpg" alt=""><span><em>DAY 1</em><b>先適應新環境</b></span><span class="ar">›</span></summary>
+            <div class="din"><ul><li>準備安靜的獨立空間</li><li>放好貓砂、水、少量食物</li><li>讓牠自己探索 不強迫互動</li></ul><p class="tip">❤ 先讓牠看你 不要抱 坐在附近做自己的事</p></div></details>
+          <details class="day"><summary><img src="img/day2.jpg" alt=""><span><em>DAY 2</em><b>建立吃飯喝水習慣</b></span><span class="ar">›</span></summary>
+            <div class="din"><ul><li>少量多餐</li><li>確認有喝水</li><li>觀察食慾和便便</li></ul><p class="tip">❤ 手指讓牠聞一聞 用食物建立好印象</p></div></details>
+          <details class="day"><summary><img src="img/day3.jpg" alt=""><span><em>DAY 3</em><b>保持環境乾淨</b></span><span class="ar">›</span></summary>
+            <div class="din"><ul><li>每天清貓砂盆</li><li>水碗食碗保持乾淨</li><li>看便便的形狀、顏色、次數</li></ul><p class="tip">❤ 用玩具吸引注意 讓牠主動靠近你</p></div></details>
+          <details class="day"><summary><img src="img/day4.jpg" alt=""><span><em>DAY 4</em><b>開始建立信任</b></span><span class="ar">›</span></summary>
+            <div class="din"><ul><li>觀察牠的身體語言</li><li>用溫柔的聲音說話</li><li>可以輕摸下巴、臉頰</li></ul><p class="tip">❤ 牠放鬆了 再慢慢增加摸的時間</p></div></details>
+          <details class="day"><summary><img src="img/day5.jpg" alt=""><span><em>DAY 5</em><b>增加日常互動</b></span><span class="ar">›</span></summary>
+            <div class="din"><ul><li>每天固定遊戲時間</li><li>用逗貓棒或小玩具</li><li>觀察精神和食慾</li></ul><p class="tip">❤ 玩完給一點小點心 讓牠覺得跟你在一起很開心</p></div></details>
+          <details class="day"><summary><img src="img/day6.jpg" alt=""><span><em>DAY 6</em><b>觀察整體狀態</b></span><span class="ar">›</span></summary>
+            <div class="din"><ul><li>食慾、精神、排便</li><li>有沒有嘔吐、流淚、掉毛</li><li>環境維持安靜舒適</li></ul><p class="tip">❤ 延長互動時間 梳梳毛、輕輕按摩</p></div></details>
+          <details class="day"><summary><img src="img/day7.jpg" alt=""><span><em>DAY 7</em><b>安排健康檢查</b></span><span class="ar">›</span></summary>
+            <div class="din"><ul><li>第一次健康檢查</li><li>理學檢查・血液檢測</li><li>了解身體狀況 提早預防</li></ul><p class="tip">❤ 帶著這 7 天的觀察紀錄給醫生看</p></div></details>
+        </div>
         <div class="warn"><span>!</span><div><b>完全不吃超過 24 小時、尿不出來、一直吐</b><small>不要等適應期 直接就醫</small></div></div>
       </div>
     </details>
