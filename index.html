@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#f6f1e7">
-<meta name="description" content="香菇爸護貓手冊：腸道保養與腎臟保養，軟便、挑食、喝水量、健檢一次看懂，完整版加 LINE 領取">
-<meta property="og:title" content="香菇爸護貓手冊｜腸道 × 腎臟">
-<meta property="og:description" content="香菇爸八年照護筆記 ~ 腸道與腎臟篇">
+<meta name="description" content="香菇爸護貓手冊：新手到家、腸道保養、腎臟保養、成分怎麼看，完整版加 LINE 領取">
+<meta property="og:title" content="香菇爸護貓手冊">
+<meta property="og:description" content="香菇爸八年照護筆記 ~ 從到家第一天開始">
 <meta property="og:image" content="img/shroom.jpg">
-<title>香菇爸護貓手冊｜腸道 × 腎臟</title>
+<title>香菇爸護貓手冊</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
 <style>
@@ -39,6 +39,8 @@ a{color:inherit;text-decoration:none}
 .cat small{display:block;color:var(--soft);font-size:11.5px;line-height:1.5}
 .cat.gut.on{border-color:var(--gut);background:var(--gut2)}
 .cat.kid.on{border-color:var(--kid);background:var(--kid2)}
+.cat.new.on{border-color:#a0715a;background:#f5e9df}.cat.ing.on{border-color:#8a6aa0;background:#efe7f4}
+.newp .ic{background:#f5e9df}.newp .step i{background:#a0715a}.ingp .ic{background:#efe7f4}.ingp .step i{background:#8a6aa0}
 .panel{display:none;animation:in .35s ease}
 .panel.on{display:block}
 @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
@@ -102,18 +104,44 @@ a{color:inherit;text-decoration:none}
     <img src="img/shroom.jpg" alt="香菇本尊">
     <div class="tx">
       <span class="k">SHROOM CARE GUIDE</span>
-      <h1 class="serif">腸道顧好吃得香<br>腎臟要從年輕顧</h1>
-      <p>香菇爸八年照護筆記 ~ 腸道與腎臟篇</p>
+      <h1 class="serif">從到家第一天<br>陪牠健康長大</h1>
+      <p>香菇爸八年照護筆記 ~ 新手・腸道・腎臟・成分</p>
     </div>
   </div>
 
   <div class="cats" role="tablist">
-    <button class="cat gut on" data-p="gut" role="tab"><i>🌿</i><b>腸道保養</b><small>軟便・挑食</small></button>
+    <button class="cat new on" data-p="new" role="tab"><i>🏡</i><b>新手到家</b><small>前 7 天・送貓前檢查</small></button>
+    <button class="cat gut" data-p="gut" role="tab"><i>🌿</i><b>腸道保養</b><small>軟便・挑食</small></button>
     <button class="cat kid" data-p="kid" role="tab"><i>💧</i><b>腎臟保養</b><small>喝水・健檢</small></button>
+    <button class="cat ing" data-p="ing" role="tab"><i>🔍</i><b>成分怎麼看</b><small>罐罐 NG 成分</small></button>
   </div>
 
+  <!-- 新手到家 -->
+  <section class="panel newp on" id="p-new">
+    <p class="pt">點一下主題就會展開 👇</p>
+    <details class="topic">
+      <summary><span class="ic">🏡</span><span><b>新貓到家 7 天這樣做</b><small>用愛與耐心 陪牠建立安全感</small></span><span class="ar">›</span></summary>
+      <div class="body">
+        <a class="fig" href="img/guide-newcat.jpg" target="_blank" rel="noopener"><img src="img/guide-newcat.jpg" alt="新貓到家 7 天這樣做：Day1 先適應新環境、Day2 建立飲食與喝水習慣、Day3 保持環境乾淨、Day4 建立信任感、Day5 增加日常互動、Day6 觀察整體狀態、Day7 安排健康檢查" loading="lazy"></a>
+        <span class="zoom">🔍 點圖片可以放大</span>
+        <div class="step"><i>1</i><div><b>前三天 先不要抱</b><small>給牠獨立空間 讓牠自己決定什麼時候靠近你</small></div></div>
+        <div class="step"><i>2</i><div><b>每天看吃喝拉撒</b><small>食慾、喝水、便便 是這週最重要的觀察</small></div></div>
+        <div class="step"><i>3</i><div><b>第 7 天安排健檢</b><small>理學檢查、血液檢測 先了解牠的身體狀況</small></div></div>
+        <div class="warn"><span>!</span><div><b>完全不吃超過 24 小時、尿不出來、一直吐</b><small>不要等適應期 直接就醫</small></div></div>
+      </div>
+    </details>
+    <details class="topic">
+      <summary><span class="ic">📋</span><span><b>貓舍送貓前 一定要做的檢查</b><small>不是只有可愛 也要健康才可以回家</small></span><span class="ar">›</span></summary>
+      <div class="body">
+        <a class="fig" href="img/guide-cattery.jpg" target="_blank" rel="noopener"><img src="img/guide-cattery.jpg" alt="貓舍在送貓前一定要做的檢查：疫苗紀錄、基礎健康檢查、FIV/FeLV 檢測、體內外驅蟲與糞便檢查、晶片植入與寵物登記、品種相關健康篩檢" loading="lazy"></a>
+        <span class="zoom">🔍 點圖片可以放大</span>
+        <p class="note">不是只問「有沒有做」<br><b>日期、紀錄、檢測結果</b>都要一起確認 ~ 拿不出紀錄的，就是要停下來想一想的訊號</p>
+      </div>
+    </details>
+  </section>
+
   <!-- 腸道 -->
-  <section class="panel gutp on" id="p-gut">
+  <section class="panel gutp" id="p-gut">
     <p class="pt">點一下主題就會展開 👇</p>
     <details class="topic">
       <summary><span class="ic">💩</span><span><b>為什麼幼貓特別容易軟便？</b><small>多數不是生病 是身體還在適應</small></span><span class="ar">›</span></summary>
@@ -164,6 +192,21 @@ a{color:inherit;text-decoration:none}
     </details>
   </section>
 
+  <!-- 成分 -->
+  <section class="panel ingp" id="p-ing">
+    <p class="pt">點一下主題就會展開 👇</p>
+    <details class="topic">
+      <summary><span class="ic">🥫</span><span><b>買罐罐前 先看這些 NG 成分</b><small>增稠・凝膠・填充 常見的有哪些</small></span><span class="ar">›</span></summary>
+      <div class="body">
+        <a class="fig" href="img/guide-ng.jpg" target="_blank" rel="noopener"><img src="img/guide-ng.jpg" alt="貓罐頭 NG 成分：卡拉膠、關華豆膠、黃原膠、刺槐豆膠、澱粉類、洋菜寒天，以及理想與要多比較的罐罐成分順序" loading="lazy"></a>
+        <span class="zoom">🔍 點圖片可以放大</span>
+        <div class="step"><i>1</i><div><b>肉在前 3～5 項</b><small>成分表排越前面放越多 ~ 肉在前面才是主要營養來源</small></div></div>
+        <div class="step"><i>2</i><div><b>看到膠和澱粉不用恐慌</b><small>但如果排在很前面、比例很高 就再比較別款</small></div></div>
+        <div class="step"><i>3</i><div><b>卡拉膠會優先避開</b><small>有更單純的選擇時 選更單純的</small></div></div>
+      </div>
+    </details>
+  </section>
+
   <!-- 完整版 -->
   <div class="full">
     <div class="lock"><img src="img/guide-bones.jpg" alt=""><span>🔒 完整版<br>加 LINE 就能看</span></div>
@@ -174,7 +217,7 @@ a{color:inherit;text-decoration:none}
         <li>🍽️ 換糧日曆＋挑食改善步驟</li>
         <li>💧 讓貓多喝水的方法</li>
         <li>🫘 不同年齡的健檢清單</li>
-        <li>🦴 骨骼關節發展・貓舍送貓前檢查</li>
+        <li>🦴 骨骼關節發展</li>
       </ul>
       <a class="btn" href="https://agentone.metaepoch.life/link/channels/KDUdAFvq" target="_blank" rel="noopener">💬 加 LINE 領完整版</a>
       <span class="sub">加入香菇爸 LINE 就會收到</span>
