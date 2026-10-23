@@ -80,6 +80,28 @@ a{color:inherit;text-decoration:none}
 .din ul{list-style:none;display:grid;gap:4px}
 .din li{font-size:13.5px;padding-left:14px;position:relative}.din li:before{content:"";position:absolute;left:0;top:.65em;width:6px;height:6px;border-radius:50%;background:#d8b9a6}
 .din .tip{margin-top:8px;font-size:12.5px;color:#a0715a;background:#f8efe8;border-radius:10px;padding:7px 10px}
+.lead{font-size:13px;font-weight:700;color:#5c5248;margin:2px 2px 8px}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.why.four{grid-template-columns:1fr 1fr}
+.why .w{background:#fff;border:1px solid var(--line);border-radius:13px;padding:8px;text-align:center}
+.why .w img{width:100%;border-radius:9px;display:block;margin-bottom:5px}
+.why .w span{display:block;font-size:24px;margin-bottom:2px}
+.why .w b{display:block;font-size:12.5px}.why .w small{display:block;font-size:11px;color:var(--soft);line-height:1.5;margin-top:2px}
+.wide{display:block;width:100%;border-radius:13px;border:1px solid var(--line)}
+.ng-top{display:grid;grid-template-columns:92px 1fr;gap:11px;align-items:center;padding:10px;border-radius:14px;background:#fbeeee;border:1.5px solid #ecc0bc;margin-bottom:8px}
+.ng-top img{width:92px;border-radius:10px}.ng-top em{font-style:normal;font-size:10.5px;font-weight:900;color:#c25a48}
+.ng-top b{display:block;font-size:14px}.ng-top small{display:block;font-size:12px;color:#7d6a64;line-height:1.6}
+.ng{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}
+.ng div{text-align:center;background:#fff;border:1px solid var(--line);border-radius:11px;padding:5px 3px}
+.ng img{width:100%;border-radius:7px;display:block}
+.ng b{display:block;font-size:11px;margin-top:3px;line-height:1.3}.ng small{display:block;font-size:9.5px;color:var(--soft);line-height:1.35}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.cmp>div{border-radius:14px;padding:10px;text-align:center}
+.cmp .ok{background:#eef5ea;border:1.5px solid #bcd6b0}.cmp .no{background:#fbeeee;border:1.5px solid #ecc0bc}
+.cmp img{width:80%;display:block;margin:0 auto 4px}
+.cmp b{font-size:13.5px}.cmp .ok b{color:#4a7d3f}.cmp .no b{color:#c25a48}
+.cmp ol{text-align:left;margin:6px 0 4px 22px;font-size:12.5px;line-height:1.7}
+.cmp small{font-size:11px;color:var(--soft)}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
 .mini{padding:11px;border-radius:13px;background:#fff;border:1px solid var(--line)}
 .mini i{font-style:normal;font-size:19px}.mini b{display:block;font-size:13px;margin-top:3px}.mini small{display:block;color:var(--soft);font-size:11.5px;line-height:1.55}
@@ -169,19 +191,30 @@ a{color:inherit;text-decoration:none}
     <details class="topic">
       <summary><span class="ic">💩</span><span><b>為什麼幼貓特別容易軟便？</b><small>多數不是生病 是身體還在適應</small></span><span class="ar">›</span></summary>
       <div class="body">
-        <a class="fig" href="img/guide-softpoop.jpg" target="_blank" rel="noopener"><img src="img/guide-softpoop.jpg" alt="為什麼幼貓幼犬特別容易軟便：換環境壓力、換食物太快、腸道菌叢還沒穩定，便便狀態參考" loading="lazy"></a>
-        <span class="zoom">🔍 點圖片可以放大</span>
-        <div class="step"><i>1</i><div><b>換食物要慢</b><small>7～10 天新舊混著換，不要一次全換</small></div></div>
-        <div class="step"><i>2</i><div><b>環境先穩定</b><small>剛到新家壓力大，腸胃也會跟著敏感</small></div></div>
-        <div class="step"><i>3</i><div><b>水要喝夠</b><small>水喝夠，消化和排便才會順</small></div></div>
+        <p class="lead">多數不是生病 是腸胃還在適應 ~ 常見 3 個原因</p>
+        <div class="why">
+          <div class="w"><img src="img/sp1.jpg" alt="離開媽媽、兄弟姊妹分離、新環境"><b>換環境壓力</b><small>離開媽媽、到新家 腸胃也會緊張</small></div>
+          <div class="w"><img src="img/sp2.jpg" alt="原本吃 A 回家直接換 B"><b>換食物太快</b><small>一回家就直接換新飼料</small></div>
+          <div class="w"><img src="img/sp3.jpg" alt="腸道菌叢"><b>腸道還在發育</b><small>幼貓的腸胃還在建立中</small></div>
+        </div>
+        <p class="lead" style="margin-top:12px">便便長這樣 對照一下</p>
+        <img class="wide" src="img/poop.jpg" alt="便便狀態參考：正常、偏軟、軟便需留意、糊狀需觀察、水狀需就醫">
+        <p class="lead" style="margin-top:12px">可以這樣幫牠</p>
+        <div class="step"><i>1</i><div><b>換食物 7～10 天慢慢換</b></div></div>
+        <div class="step"><i>2</i><div><b>環境先穩定 讓牠安心</b></div></div>
+        <div class="step"><i>3</i><div><b>水要喝夠 給腸胃一點時間</b></div></div>
         <div class="warn"><span>!</span><div><b>軟便超過 24～48 小時、拉水、帶血</b><small>加上嘔吐、沒精神、不吃東西 ~ 請直接就醫，幼貓更不能等</small></div></div>
       </div>
     </details>
     <details class="topic">
       <summary><span class="ic">🍽️</span><span><b>挑食 有時候是腸胃在說話</b><small>不一定是任性</small></span><span class="ar">›</span></summary>
       <div class="body">
-        <a class="fig" href="img/guide-picky.jpg" target="_blank" rel="noopener"><img src="img/guide-picky.jpg" alt="為什麼有些貓狗特別容易挑食：習慣被加菜、換環境壓力大、嗅覺影響食慾、腸胃狀態不穩" loading="lazy"></a>
-        <span class="zoom">🔍 點圖片可以放大</span>
+        <div class="why four">
+          <div class="w"><span>🥫</span><b>被加菜養刁</b><small>每天換口味 牠會等更好的</small></div>
+          <div class="w"><span>📦</span><b>環境壓力</b><small>搬家、新成員都影響食慾</small></div>
+          <div class="w"><span>👃</span><b>不夠香</b><small>放太久、天氣熱 香味跑掉</small></div>
+          <div class="w"><span>🫃</span><b>腸胃不穩</b><small>消化不舒服 食慾跟著起伏</small></div>
+        </div>
         <div class="step"><i>1</i><div><b>固定主食</b><small>每天換口味，貓咪會學到「不吃會有更好的」</small></div></div>
         <div class="step"><i>2</i><div><b>固定時間開飯</b><small>吃不完的收起來，下一餐再給</small></div></div>
         <div class="step"><i>3</i><div><b>同時看便便</b><small>挑食又軟便，可能是腸胃狀態不穩，可以記錄下來問獸醫</small></div></div>
@@ -221,11 +254,20 @@ a{color:inherit;text-decoration:none}
     <details class="topic">
       <summary><span class="ic">🥫</span><span><b>買罐罐前 先看這些 NG 成分</b><small>增稠・凝膠・填充 常見的有哪些</small></span><span class="ar">›</span></summary>
       <div class="body">
-        <a class="fig" href="img/guide-ng.jpg" target="_blank" rel="noopener"><img src="img/guide-ng.jpg" alt="貓罐頭 NG 成分：卡拉膠、關華豆膠、黃原膠、刺槐豆膠、澱粉類、洋菜寒天，以及理想與要多比較的罐罐成分順序" loading="lazy"></a>
-        <span class="zoom">🔍 點圖片可以放大</span>
-        <div class="step"><i>1</i><div><b>肉在前 3～5 項</b><small>成分表排越前面放越多 ~ 肉在前面才是主要營養來源</small></div></div>
-        <div class="step"><i>2</i><div><b>看到膠和澱粉不用恐慌</b><small>但如果排在很前面、比例很高 就再比較別款</small></div></div>
-        <div class="step"><i>3</i><div><b>卡拉膠會優先避開</b><small>有更單純的選擇時 選更單純的</small></div></div>
+        <p class="lead">這些常用來 增稠・凝膠・填充</p>
+        <div class="ng-top"><img src="img/ng-carra.jpg" alt="卡拉膠"><div><em>特別注意</em><b>卡拉膠 Carrageenan</b><small>做成肉凍、慕斯質地 ~ 有更單純的選擇時 香菇爸會優先避開</small></div></div>
+        <div class="ng">
+          <div><img src="img/ng-guar.jpg" alt=""><b>關華豆膠</b><small>增稠用 不用怕</small></div>
+          <div><img src="img/ng-xan.jpg" alt=""><b>黃原膠</b><small>增稠用 不用怕</small></div>
+          <div><img src="img/ng-locust.jpg" alt=""><b>刺槐豆膠</b><small>增稠用 不用怕</small></div>
+          <div><img src="img/ng-starch.jpg" alt=""><b>澱粉類</b><small>排很前面 就要比較</small></div>
+          <div><img src="img/ng-agar.jpg" alt=""><b>洋菜・寒天</b><small>凝膠用 通常沒問題</small></div>
+        </div>
+        <p class="lead" style="margin-top:12px">翻到成分表 看前 5 項</p>
+        <div class="cmp">
+          <div class="ok"><img src="img/can-good.jpg" alt=""><b>✓ 比較理想</b><ol><li>雞肉</li><li>雞肝</li><li>雞心</li><li>雞脂肪</li></ol><small>肉在最前面</small></div>
+          <div class="no"><img src="img/can-bad.jpg" alt=""><b>✕ 要多比較</b><ol><li>雞肉</li><li>米</li><li>玉米蛋白粉</li><li>木薯粉</li></ol><small>澱粉植物變多</small></div>
+        </div>
       </div>
     </details>
   </section>
