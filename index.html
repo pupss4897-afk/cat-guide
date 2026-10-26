@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#f6f1e7">
-<meta name="description" content="香菇爸護貓手冊：新手到家、腸道保養、腎臟保養、成分怎麼看，完整版加 LINE 領取">
+<meta name="description" content="香菇爸護貓手冊：新手到家、腸道保養、腎臟保養、成分怎麼看、聽懂貓語，完整版加 LINE 領取">
 <meta property="og:title" content="香菇爸護貓手冊">
 <meta property="og:description" content="香菇爸八年照護筆記 ~ 從到家第一天開始">
 <meta property="og:image" content="img/shroom.jpg">
@@ -114,6 +114,37 @@ a{color:inherit;text-decoration:none}
 .age span{font-weight:900;font-size:12.5px;text-align:center;padding:6px 4px;border-radius:10px;background:var(--kid2);color:var(--kid)}
 .age b{font-size:13.5px}.age small{display:block;color:var(--soft);font-size:12px}
 
+/* 聽懂貓語＋喝水妙招 */
+.cat.talk{grid-column:1/-1;display:flex;align-items:center;gap:12px}
+.cat.talk i{font-size:30px}.cat.talk b{margin-top:0}
+.cat.talk.on{border-color:#c27a3a;background:#f8ecdf}
+.talkp .ic{background:#f8ecdf}
+.tcs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.tc{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.tc img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+.tc div{padding:8px 10px 10px}
+.tc b{display:flex;gap:6px;align-items:center;font-size:13.5px;line-height:1.35}
+.tc b em{flex:none;width:20px;height:20px;border-radius:7px;display:grid;place-items:center;font-style:normal;font-size:11px;color:#fff;background:var(--kid)}
+.talkp .tc b em{background:#c27a3a}
+.tc small{display:block;color:#6b6157;font-size:12px;line-height:1.6;margin-top:4px}
+.tc .say{display:inline-block;margin-top:5px;font-size:11.5px;font-weight:700;color:#a0582a;background:#fbefe3;border-radius:8px;padding:2px 8px}
+.tc .say.warn2{color:var(--red);background:var(--red2)}
+.meow{display:grid;grid-template-columns:104px 1fr;gap:11px;padding:9px;border-radius:15px;background:#fff;border:1px solid var(--line);margin-bottom:8px}
+.meow img{width:104px;height:116px;object-fit:cover;object-position:top;border-radius:11px}
+.meow b{display:flex;gap:6px;align-items:center;font-size:14.5px}
+.meow b em{flex:none;width:21px;height:21px;border-radius:7px;display:grid;place-items:center;font-style:normal;font-size:11px;color:#fff;background:#c27a3a}
+.meow q{display:block;font-size:16px;font-weight:800;color:#a0582a;margin:2px 0 4px;quotes:"「" "」"}
+.meow ul{list-style:none;display:flex;flex-wrap:wrap;gap:4px}
+.meow li{font-size:12px;background:#f8ecdf;border-radius:8px;padding:1px 7px}
+.meow small{display:block;color:var(--soft);font-size:11.5px;line-height:1.55;margin-top:5px}
+.meow .alert{color:var(--red)}
+.play{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:8px}
+.play div{background:#fff;border:1px dashed #e3c7ab;border-radius:13px;padding:9px 7px;text-align:center}
+.play span{display:block;font-size:10.5px;color:var(--soft)}
+.play q{display:block;font-weight:800;color:#a0582a;font-size:13px;quotes:"「" "」";margin:2px 0}
+.play b{display:block;font-size:12px}
+.poster{display:block;text-align:center;font-size:12px;color:var(--soft);padding:9px;border-radius:12px;border:1px solid var(--line);background:#faf6ee;margin-top:8px}
+
 /* 完整版 */
 .full{margin-top:22px;border-radius:24px;overflow:hidden;background:#38422f;color:#fff}
 .full .lock{position:relative;height:150px;overflow:hidden}
@@ -139,7 +170,7 @@ a{color:inherit;text-decoration:none}
     <div class="tx">
       <span class="k">SHROOM CARE GUIDE</span>
       <h1 class="serif">從到家第一天<br>陪牠健康長大</h1>
-      <p>香菇爸八年照護筆記 ~ 新手・腸道・腎臟・成分</p>
+      <p>香菇爸八年照護筆記 ~ 新手・腸道・腎臟・成分・貓語</p>
     </div>
   </div>
 
@@ -148,6 +179,7 @@ a{color:inherit;text-decoration:none}
     <button class="cat gut" data-p="gut" role="tab"><i>🌿</i><b>腸道保養</b><small>軟便・挑食</small></button>
     <button class="cat kid" data-p="kid" role="tab"><i>💧</i><b>腎臟保養</b><small>喝水・健檢</small></button>
     <button class="cat ing" data-p="ing" role="tab"><i>🔍</i><b>成分怎麼看</b><small>罐罐 NG 成分</small></button>
+    <button class="cat talk" data-p="talk" role="tab"><i>🐾</i><span><b>聽懂貓語</b><small>10 種喵叫聲・12 個身體語言</small></span></button>
   </div>
 
   <!-- 新手到家 -->
@@ -238,6 +270,14 @@ a{color:inherit;text-decoration:none}
       </div>
     </details>
     <details class="topic">
+      <summary><span class="ic">🐟</span><span><b>不愛喝水？騙喝水 12 招</b><small>小改變大不同 每天多喝一口</small></span><span class="ar">›</span></summary>
+      <div class="body">
+        <p class="lead">一次試 1～2 招就好 找到你家主子吃的那一招 😼</p>
+        <div class="tcs"><div class="tc"><img src="img/water1.jpg" alt="用流動水誘惑" loading="lazy"><div><b><em>1</em>用流動水誘惑</b><small>貓咪通常喜歡流動的水 可以用循環飲水機</small></div></div><div class="tc"><img src="img/water2.jpg" alt="換不同容器" loading="lazy"><div><b><em>2</em>換不同容器</b><small>陶瓷、玻璃、不鏽鋼或淺碗 找到牠喜歡的款式</small></div></div><div class="tc"><img src="img/water3.jpg" alt="多個飲水點" loading="lazy"><div><b><em>3</em>多個飲水點</b><small>家裡不同角落都放水碗 增加喝水的機會</small></div></div><div class="tc"><img src="img/water4.jpg" alt="加點溫水" loading="lazy"><div><b><em>4</em>加點溫水</b><small>微溫的水更接近體溫 更能吸引牠主動喝</small></div></div><div class="tc"><img src="img/water5.jpg" alt="水裡加點鮮味" loading="lazy"><div><b><em>5</em>水裡加點鮮味</b><small>少量無鹽雞湯、魚湯（例如煮雞胸肉的湯）</small></div></div><div class="tc"><img src="img/water6.jpg" alt="濕食搭配" loading="lazy"><div><b><em>6</em>濕食搭配</b><small>肉泥、主食罐增加水分 邊吃邊補水</small></div></div><div class="tc"><img src="img/water7.jpg" alt="冰塊遊戲" loading="lazy"><div><b><em>7</em>冰塊遊戲</b><small>放幾顆小冰塊 覺得好玩 也會忍不住喝水</small></div></div><div class="tc"><img src="img/water8.jpg" alt="階段式加水" loading="lazy"><div><b><em>8</em>階段式加水</b><small>飼料的含水量慢慢加 讓牠一點一點適應</small></div></div><div class="tc"><img src="img/water9.jpg" alt="水中放小驚喜" loading="lazy"><div><b><em>9</em>水中放小驚喜</b><small>放可食用的凍乾、貓薄荷或小玩具 吸引牠靠近</small></div></div><div class="tc"><img src="img/water10.jpg" alt="多貓家庭互動" loading="lazy"><div><b><em>10</em>多貓家庭互動</b><small>有同伴一起喝 會增加模仿的機會</small></div></div><div class="tc"><img src="img/water11.jpg" alt="新鮮更好喝" loading="lazy"><div><b><em>11</em>新鮮更好喝</b><small>每天換新鮮的水 保持乾淨沒異味</small></div></div><div class="tc"><img src="img/water12.jpg" alt="從小養成習慣" loading="lazy"><div><b><em>12</em>從小養成習慣</b><small>幼貓時期就多試不同喝水方式 更容易養成習慣</small></div></div></div>
+        <a class="poster" href="img/poster-water.jpg" target="_blank" rel="noopener">🖼️ 看整張海報（可以存起來）</a>
+      </div>
+    </details>
+    <details class="topic">
       <summary><span class="ic">🫘</span><span><b>腎臟為什麼要早點注意？</b><small>貓很會忍 早期幾乎沒症狀</small></span><span class="ar">›</span></summary>
       <div class="body">
         <p class="note">腎臟是貓咪很常被提醒要注意的器官，<b>早期通常看不出來</b>，等到喝多尿多、變瘦才發現，往往已經不是剛開始了。<br><br>香菇爸的做法很簡單：<b>年輕就把水顧好、定期健檢看數字</b>，不是等出事才處理。</p>
@@ -268,6 +308,33 @@ a{color:inherit;text-decoration:none}
           <div class="ok"><img src="img/can-good.jpg" alt=""><b>✓ 比較理想</b><ol><li>雞肉</li><li>雞肝</li><li>雞心</li><li>雞脂肪</li></ol><small>肉在最前面</small></div>
           <div class="no"><img src="img/can-bad.jpg" alt=""><b>✕ 要多比較</b><ol><li>雞肉</li><li>米</li><li>玉米蛋白粉</li><li>木薯粉</li></ol><small>澱粉植物變多</small></div>
         </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- 聽懂貓語 -->
+  <section class="panel talkp" id="p-talk">
+    <p class="pt">點一下主題就會展開 👇</p>
+    <details class="topic">
+      <summary><span class="ic">🗣️</span><span><b>10 種喵叫聲 牠在說什麼？</b><small>主子不是亂叫 是有話要說</small></span><span class="ar">›</span></summary>
+      <div class="body">
+        <div class="meow"><img src="img/meow1.jpg" alt="打招呼喵" loading="lazy"><div><b><em>1</em>打招呼喵</b><q>喵！</q><ul><li>欸～你回來啦</li><li>我看到你了</li><li>奴才早安</li></ul><small>📍 你回家、你起床、你剛進房間</small></div></div><div class="meow"><img src="img/meow2.jpg" alt="聊天喵" loading="lazy"><div><b><em>2</em>聊天喵</b><q>喵喵喵～</q><ul><li>今天過得如何？</li><li>我有事想跟你說</li><li>陪我一下</li></ul><small>📍 跟著你走來走去、坐在旁邊看著你</small></div></div><div class="meow"><img src="img/meow3.jpg" alt="肚子餓喵" loading="lazy"><div><b><em>3</em>肚子餓喵</b><q>喵～～～～</q><ul><li>飯呢？</li><li>我的飯呢？</li><li>我的飯到底呢？</li></ul><small>📍 固定吃飯時間、看到你在拿食物</small></div></div><div class="meow"><img src="img/meow4.jpg" alt="催促喵" loading="lazy"><div><b><em>4</em>催促喵</b><q>喵啊啊啊！</q><ul><li>快一點！</li><li>本貓等很久了！</li><li>效率呢？</li></ul><small>📍 開罐罐、倒飼料、搖凍乾的時候</small></div></div><div class="meow"><img src="img/meow5.jpg" alt="開門喵" loading="lazy"><div><b><em>5</em>開門喵</b><q>喵？</q><ul><li>幫我開門</li><li>我要進去</li><li>我要出去</li></ul><small>📍 想進房間、想出房間</small></div></div><div class="meow"><img src="img/meow6.jpg" alt="馬桶監督喵" loading="lazy"><div><b><em>6</em>馬桶監督喵</b><q>喵～</q><ul><li>你還活著嗎？</li><li>需要保鑣嗎？</li><li>本喵巡邏一下</li></ul><small>📍 你上廁所、洗澡的時候</small></div></div><div class="meow"><img src="img/meow7.jpg" alt="狩獵卡卡叫" loading="lazy"><div><b><em>7</em>狩獵卡卡叫</b><q>嘎嘎嘎嘎嘎</q><ul><li>我要抓牠！</li><li>獵物出現！</li><li>快讓我出去！</li></ul><small>📍 看到鳥、壁虎、昆蟲</small></div></div><div class="meow"><img src="img/meow8.jpg" alt="委屈喵" loading="lazy"><div><b><em>8</em>委屈喵</b><q>嗚嗚喵～</q><ul><li>你是不是不愛我了</li><li>你今天摸太少</li><li>本貓有情緒了</li></ul><small>📍 你出門太久、家裡有新貓加入</small></div></div><div class="meow"><img src="img/meow9.jpg" alt="半夜鬼叫喵" loading="lazy"><div><b><em>9</em>半夜鬼叫喵</b><q>嗚喵～～～</q><ul><li>有人嗎？</li><li>我很無聊</li><li>起床陪我</li></ul><small>📍 半夜跑來跑去、一直叫不停</small><small class="alert">⚠️ 年長貓突然常常夜叫 建議多觀察生活和健康狀況</small></div></div><div class="meow"><img src="img/meow10.jpg" alt="哈氣警告喵" loading="lazy"><div><b><em>10</em>哈氣警告喵</b><q>哈——！</q><ul><li>不要過來</li><li>我不舒服</li><li>我現在很緊張</li></ul><small>📍 感到威脅、不想被摸、疼痛或害怕</small></div></div>
+        <p class="lead" style="margin-top:12px">🎬 香菇的小劇場</p>
+        <div class="play">
+          <div><span>聽到凍乾罐</span><q>喵喵喵喵喵！</q><b>朕駕到 快打開！</b></div>
+          <div><span>早上 6 點</span><q>喵～～～～</q><b>上班時間到了！</b></div>
+          <div><span>你在工作</span><q>喵？</q><b>不要工作了 摸我！</b></div>
+        </div>
+        <p class="note">每隻貓個性不同 叫聲也會有差異 ~ 多觀察、多陪伴 你會越來越懂你家主子 🐾</p>
+        <a class="poster" href="img/poster-meow.jpg" target="_blank" rel="noopener">🖼️ 看整張海報（可以存起來）</a>
+      </div>
+    </details>
+    <details class="topic">
+      <summary><span class="ic">💬</span><span><b>貓咪其實一直在跟你說話</b><small>最常見的 12 個貓語行為</small></span><span class="ar">›</span></summary>
+      <div class="body">
+        <div class="tcs"><div class="tc"><img src="img/talk1.jpg" alt="慢慢眨眼" loading="lazy"><div><b><em>1</em>慢慢眨眼</b><small>我信任你 我很放鬆</small><span class="say ">貓界的「我愛你」 ❤</span></div></div><div class="tc"><img src="img/talk2.jpg" alt="不敢直視你" loading="lazy"><div><b><em>2</em>不敢直視你</b><small>心虛模式啟動</small><span class="say ">通常剛做壞事 🤣</span></div></div><div class="tc"><img src="img/talk3.jpg" alt="瞳孔放大 耳朵往後" loading="lazy"><div><b><em>3</em>瞳孔放大 耳朵往後</b><small>我現在很緊張 不要再逼我了</small><span class="say warn2">可能下一秒開扁 ⚠️</span></div></div><div class="tc"><img src="img/talk4.jpg" alt="螃蟹步＋側跳" loading="lazy"><div><b><em>4</em>螃蟹步＋側跳</b><small>快陪我玩！！</small><span class="say ">超經典屁孩模式 🤣</span></div></div><div class="tc"><img src="img/talk5.jpg" alt="用頭狂蹭你" loading="lazy"><div><b><em>5</em>用頭狂蹭你</b><small>你是我的人</small><span class="say ">在留味道＋撒嬌</span></div></div><div class="tc"><img src="img/talk6.jpg" alt="尾巴直直豎起來" loading="lazy"><div><b><em>6</em>尾巴直直豎起來</b><small>今天心情很好！</small><span class="say ">尾巴微抖＝超開心</span></div></div><div class="tc"><img src="img/talk7.jpg" alt="呼嚕呼嚕聲" loading="lazy"><div><b><em>7</em>呼嚕呼嚕聲</b><small>我現在很舒服</small><span class="say warn2">⚠️ 不舒服時也可能呼嚕</span></div></div><div class="tc"><img src="img/talk8.jpg" alt="一直踩奶" loading="lazy"><div><b><em>8</em>一直踩奶</b><small>很安心很幸福</small><span class="say ">多是幼貓時期的安全感延續</span></div></div><div class="tc"><img src="img/talk9.jpg" alt="突然爆衝暴走" loading="lazy"><div><b><em>9</em>突然爆衝暴走</b><small>精力太滿啦！！</small><span class="say ">尤其半夜最常見 🤣</span></div></div><div class="tc"><img src="img/talk10.jpg" alt="把屁股對著你" loading="lazy"><div><b><em>10</em>把屁股對著你</b><small>我超信任你</small><span class="say ">雖然畫面不一定舒服</span></div></div><div class="tc"><img src="img/talk11.jpg" alt="一直跟著你走" loading="lazy"><div><b><em>11</em>一直跟著你走</b><small>牠其實超黏你</small><span class="say ">只是貓咪愛得很低調 🥹</span></div></div><div class="tc"><img src="img/talk12.jpg" alt="突然咬你一下" loading="lazy"><div><b><em>12</em>突然咬你一下</b><small>有時候不是討厭你</small><span class="say warn2">可能是玩過頭、太嗨、摸太久</span></div></div></div>
+        <p class="note">每隻貓個性不同 ~ 理解牠的行為 就是最好的愛與陪伴 ❤</p>
+        <a class="poster" href="img/poster-talk.jpg" target="_blank" rel="noopener">🖼️ 看整張海報（可以存起來）</a>
       </div>
     </details>
   </section>
